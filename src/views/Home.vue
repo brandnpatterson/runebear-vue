@@ -1,18 +1,18 @@
 <template>
   <div class="home">
-    <img src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h2>{{ count }}</h2>
+    <button class="button is-primary">{{ message }}</button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
-  name: "home",
-  components: {
-    HelloWorld
+  name: 'home',
+  data() {
+    return {
+      count: 0,
+      message: 'Click Me'
+    }
   }
 };
 </script>
